@@ -8,18 +8,19 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://zentai-www.vercel.app',
+  //site: 'https://zentai-www.vercel.app',
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-  sitemap: true,
+ // sitemap: false,
   // Generate sitemap (set to "false" to disable)
-  integrations: [sitemap(), mdx(), image(), lit()],
+ // integrations: [sitemap(), mdx(), image(), lit()],
   // Add renderers to the config
   // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
-  vite: {
-    ssr: {
-      external: ["svgo"]
-    }
-  },
+//  vite: {
+ //   ssr: {
+//      external: ["svgo"]
+////    }
+ // },
   output: "server",
   adapter: vercel()
+  
 });
