@@ -20,6 +20,6 @@ export default defineConfig({
       external: ["svgo"]
     }
   },
-  output: "static",
+  output: "server",
   adapter: vercel()
 });
