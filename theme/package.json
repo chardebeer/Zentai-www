@@ -27,6 +27,7 @@
 		"prettier-plugin-astro": "^0.0.12"
 	},
 	"dependencies": {
-		"@astrojs/vercel": "^2.4.0"
+		"@astrojs/vercel": "^2.4.0",
+		"parse5": "^7.1.2"
 	}
 }
